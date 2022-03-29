@@ -1,0 +1,122 @@
+*{
+	padding: 0;	
+}
+	
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	text-align: center;
+	background-image: url('img/bg.jpg'); 
+	background-size: cover;	
+	font-family: "Sofia", sans-serif;
+}
+
+span{
+	color: orange;
+}
+	
+div{	
+	display: inline-block;
+	border: 0.06em solid black;
+}
+
+#Token{
+	border-radius: 500px;
+	position: relative;
+	transition: all .2s ease-in-out;
+}
+
+#Token:hover{
+	transform: scale(1.05);
+}
+
+#Token:active{
+	transform: scale(0.99);
+}
+
+div.minuszero{
+	width: 100%;
+	height: 100%;
+}
+
+div.zero{
+	width: 100%;
+	height: 100%;
+}
+
+div.one{
+	float: left;
+	width: 69.2%;
+}
+
+div.two{
+	float: right;
+	width: 30%;	
+}
+
+div.scoreContainer{
+	background-color: rgb(255, 255, 255, 0.2);
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div.unselectable{ /*Block Selections */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+table.shopButton{
+	background-color: #b5b5b5;
+	transition: all .2s ease-in-out;
+	border-radius: 10px;
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+}
+
+table.shopButton:hover{
+	background-color: #c7c7c7;
+	transition: all .2s ease-in-out;
+}
+
+table.shopButton img{
+	width: 64px;
+	height: 64px;
+}
+
+table.shopButton #NameAndCost p{
+	margin: 0px;
+	width: 60%;
+}
+
+table.shopButton #NameAndCost p:first-of-type{
+	font-size: 24px;
+}
+
+table.shopButton #amount{
+	font-size: 48px;
+	color: #595959;
+	font-family: roboto;
+	width: 15%;
+}
+
+div.sectionFooter{
+	margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
