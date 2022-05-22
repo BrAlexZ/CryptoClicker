@@ -4,32 +4,39 @@
 		<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.png" />
 		<title>Crypto Clicker</title>
 		<link rel="stylesheet" href="./css.css">
-		
+		<script type="text/javascript">
+        function togglePlay() {
+            var myAudio = document.getElementById("myAudio");myAudio.volume = 0.1;
+            return myAudio.paused ? myAudio.play() : myAudio.pause(); 
+        };</script>
 		</head>
 	<body>
-		<div class="minuszero unselectable">
-			<div class="zero unselectable">
-				<div class="one">
-					<div class="scoreContainer unselectable" >
-						<span id="score">0</span> Token
-					</div><br><br>
-					<div class="unselectable" id="clicker"></div><br><br>
-					<div class="scoreContainer unselectable" >
-						<span id="ScorePerSecond">0</span> Tokens per seconds					 
+		<div id="header">Crypto Clicker</div>
+			<div class="minuszero unselectable">
+				<div class="zero unselectable">
+					<div class="one">
+						<div class="scoreContainer unselectable" >
+							<span id="score">0</span> Token
+						</div><br><br>
+						<div class="unselectable" id="clicker"></div><br><br>
+						<div class="scoreContainer unselectable" >
+							<span id="ScorePerSecond">0</span> Tokens per seconds					 
+						</div>
+					</div>
+					<div class="two">
+						<div id="upgradeContainer"></div>
+						<div id="shopContainer"></div>
 					</div>
 				</div>
-				<div class="two">
-					<div id="upgradeContainer"></div>
-					<div id="shopContainer"></div>
-				</div>
+				<div id="achievementContainer"></div><br><br>
+				<div class="sectionFooter">
+					<h5>Crypto Clicker</h5>
+					<button onclick="saveGame();">Save Game</button>
+					<button onclick="resetGame();">Reset Game</button>
+				</div><br><br><br>
+				<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
 			</div>
-			<div id="achievementContainer"></div><br><br>
-			<div class="sectionFooter">
-				<h5>Crypto Clicker</h5>
-				<button onclick="saveGame();">Save Game</button>
-				<button onclick="resetGame();">Reset Game</button>
-			</div><br><br><br>
-		</div>
+		<div id="footer">Alex Zovatto</div>	
+		<audio id="myAudio" src="audio/Brasic.mp3"></audio>
 	</body><script src="./js/main.js"></script>
 </html>
- <!--00.00-6-->

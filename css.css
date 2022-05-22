@@ -16,12 +16,37 @@ body{
 	color: white;
 }
 
+#header{
+	height: 70px;
+	font-size: 50px;
+	padding-top: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	background-color: rgb(69, 62, 45);
+	border-bottom: 2px solid orange;
+}
+
+#footer{
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	background-color: rgb(69, 62, 45);
+	line-height: 30px;
+	color: white;
+	bottom: 0px;
+	border-top: 2px solid orange;
+	position: absolute;
+	font-family: Gothic;
+}
+
 span{
 	color: orange;
 }
 	
 div{	
-	border: 0.06em solid yellow;
+
 }
 
 #clicker:hover{
@@ -39,8 +64,7 @@ div{
 	transition: all .2s ease-in-out;
 	height: 256px;
 	width: 256px;
-	border-radius: 500px;
-	border: 0.06em solid orange;
+
 	display: inline-block;
 }
 
@@ -52,9 +76,81 @@ div{
 	position: absolute;
 }
 
+input.music{
+	width: 10px;
+	height: 10px;
+	margin-bottom: 100px;
+}
+
+
+.toggle-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.toggle-button {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 17.5px;
+	background: orange;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.toggle-button::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 3px;
+	top: 1.5px;
+	width: 15px;
+	height: 15px;
+	background-color: #7a7569;
+	border-radius: 50%;
+}
+
+.toggle-button:checked::after {
+	transform: translateX(calc(100% + 3px));
+	background-color: orange;
+}
+
+.toggle-button:checked {
+	background-color: #7a7569;
+}
+
 div.minuszero{
 	width: 980px;
 	height: 900px;
+	display: inline-block;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+div.zero{
+	width: 100%;
+	height: 575px;
+}
+
+div.one{
+	float: left;
+	width: 66.2%;
+	height: 500px;
+	display: inline-block;
+	box-shadow: 2px 4px black;
+	border: 3px solid orange;
+	border-radius: 20px;
+	border-color: orange;	
+	background: url(img/bg2.jpg);
+	/*opacity: 0.79;*/
+	background-size: cover;
+	margin-right: 10px;
+}
+
+div.two{
+	width: 30%;	
 	display: inline-block;
 	box-shadow: 2px 4px black;
 	border: 3px solid orange;
@@ -65,25 +161,10 @@ div.minuszero{
 	background-size: cover;
 }
 
-div.zero{
-	width: 100%;
-	height: 450px;
-}
-
-div.one{
-	float: left;
-	width: 69.2%;
-	display: inline-block;
-}
-
-div.two{
-	width: 30%;	
-	display: inline-block;
-	height: 100%;
-}
-
 div.scoreContainer{
 	background-color: rgb(255, 255, 255, 0.2);
+	margin-top: 25px;
+	margin-bottom: 20px;
 	padding: 10px;
 	border-radius: 5px;
 	font-size: 20px;
@@ -150,22 +231,51 @@ table.shopButton #amount{
 div.sectionFooter{
 	margin-top: 5%;
 	display: inline-block;
+	box-shadow: 2px 4px black;
+	border: 3px solid orange;
+	border-radius: 10px;
+	border-color: orange;	
+	background: url(img/bg2.jpg);
+	opacity: 0.79;
+	background-size: cover;
+}
+
+button{
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
 }
 
 #upgradeContainer img{
 	width: 64px;
 	height: 64px;
+	border: 3px solid #b5b5b5;
+	border-radius: 20px;
+	background-color: #b5b5b5;
+	background-size: cover;
+	
+}
+
+#upgradeContainer:hover{
+	background-color: #b5b5b5;
+	transition: all .2s ease-in-out;
+	box-shadow: 2px 4px black;
+	border: 3px solid orange;
+	border-radius: 20px;
+	border-color: orange;	
+	background-size: cover;
 }
 
 #achievementContainer img{
 	width: 64px;
 	height: 64px;
+	background-color: #b5b5b5;
+	transition: all .2s ease-in-out;
+	box-shadow: 2px 4px black;
+	border: 3px solid orange;
+	border-radius: 20px;
+	border-color: orange;	
+	background-size: cover;
 }
-
-
-
-
-
 
 
 
