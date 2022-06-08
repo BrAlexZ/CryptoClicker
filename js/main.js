@@ -61,9 +61,9 @@ var building = {
 
 var upgrade = {
 	name: [
-		"Stone Pickaxe",
-		"Iron Pickace",
-		"Double Click"
+		"Stone Pickaxe (Upgrade)",
+		"Iron Pickace (Upgrade)",
+		"Double Click (Upgrade)"
 	],
 	description: [
 		"Miners are twice as efficent",
@@ -125,9 +125,9 @@ var upgrade = {
 
 var achievement = {
 	name: [
-		"Pro Miner",
-		"A Humble Start",
-		"Fingertastic"
+		"Pro Miner (Ahievement)",
+		"A Humble Start (Ahievement)",             
+		"Fingertastic (Ahievement)"
 	],
 	description: [
 		"Buy 3 miners",
