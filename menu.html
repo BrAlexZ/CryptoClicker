@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.png" />
+		<title>Crypto Clicker</title>
+		<link rel="stylesheet" href="./css.css">
+		<script src="./js/main.js"></script>
+		<script type="text/javascript">
+        function togglePlay() {
+            var myAudio = document.getElementById("myAudio");myAudio.volume = 0.1;
+            return myAudio.paused ? myAudio.play() : myAudio.pause(); 
+        };</script>
+		</head>
+	<body>
+		<div id="header">Crypto Clicker</div>
+			<div class="minuszero unselectable">
+				<div class="start">
+					<a href="index.html" class="button">
+						<button>Play</button>
+					</a>
+				</div>
+				<div class="sectionFooter">
+					<h5>Crypto Clicker</h5>
+					<button onclick="resetGame();">Reset Game</button>
+				</div><br><br><br>
+				<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
+			</div>
+		<div id="footer">Alex Zovatto</div>	
+		<audio id="myAudio" src="audio/Brasic.mp3"></audio>
+	</body><script src="./js/main.js"></script>
+</html>
