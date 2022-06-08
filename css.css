@@ -323,6 +323,9 @@ div.rules{
 	border-color: orange;	
 	background: url(img/bg2.jpg);
 	background-size: cover;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .glow-on-hover {
