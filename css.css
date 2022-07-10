@@ -13,6 +13,7 @@ body{
 	backdrop-filter: blur(4px);
 	font-family: 'Ultra', serif;
 	color: white;
+	height: 100%;
 }
 
 #header{
@@ -38,8 +39,6 @@ body{
 	border-top: 2px solid orange;
 	position: absolute;
 	font-family: 'Ultra', serif;
-	position: fixed;
-    bottom: 0;
 }
 
 span{
@@ -89,7 +88,6 @@ a.button {
 	transition: all .2s ease-in-out;
 	height: 256px;
 	width: 256px;
-
 	display: inline-block;
 }
 
@@ -149,14 +147,6 @@ input.music{
 div.minuszero{
 	width: 980px;
 	height: 800px;
-	display: inline-block;
-	margin-top: 60px;
-	margin-bottom: 60px;
-}
-
-div.minuszero1{
-	width: 980px;
-	height: 700px;
 	display: inline-block;
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -289,13 +279,6 @@ button{
 }
 
 #upgradeContainer:hover{
-	background-color: #b5b5b5;
-	transition: all .2s ease-in-out;
-	box-shadow: 2px 4px black;
-	border: 3px solid orange;
-	border-radius: 20px;
-	border-color: orange;	
-	background-size: cover;
 }
 
 #achievementContainer img{

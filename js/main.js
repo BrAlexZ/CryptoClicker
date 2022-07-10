@@ -21,7 +21,6 @@ function info() {
 
 	var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
-		audio1.currentTime = 0;
 		audio1.play();
 };
 
