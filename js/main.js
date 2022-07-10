@@ -295,7 +295,7 @@ function resetGame(){
 	  showCancelButton: true,
 	  confirmButtonColor: '#d4f1f9',
 	  cancelButtonColor: '#d33',
-	  confirmButtonText: 'Yes, delete it!'
+	  confirmButtonText: 'Yes, reset it!'
 	}).then((result) => {
 	  if (result.isConfirmed) {
 		var gameSave = {};
