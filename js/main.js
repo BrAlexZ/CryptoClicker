@@ -1,3 +1,30 @@
+function togglePlay() {
+	var myAudio = document.getElementById("myAudio");myAudio.volume = 0.1;
+	return myAudio.paused ? myAudio.play() : myAudio.pause(); 
+};
+
+function play() {
+	var audio = document.getElementById('audio');
+	audio.volume = 0.03;
+	audio.currentTime = 0;
+	audio.play();
+	
+};
+
+function info() {
+			Swal.fire({
+			title: "Difficulty Info", 
+			html: "The difference between each level of difficulty is the price of each upgrade and asset. On each difficulty level the assets will produce less coin and the upgrades will be less valuable.",  
+			confirmButtonText: "Understood!",
+			confirmButtonColor: "#d4f1f9" ,			
+		});
+
+	var audio1 = document.getElementById('audio1');
+		audio1.volume = 0.05;
+		audio1.currentTime = 0;
+		audio1.play();
+};
+
 var game = {
 	score: 0,
 	totalScore: 0,
@@ -125,9 +152,9 @@ var upgrade = {
 
 var achievement = {
 	name: [
-		"Pro Miner (Ahievement)",
-		"A Humble Start (Ahievement)",             
-		"Fingertastic (Ahievement)"
+		"Pro Miner (Achievement)",
+		"A Humble Start (Achievement)",
+		"Fingertastic (Achievement)"
 	],
 	description: [
 		"Buy 3 miners",
@@ -201,6 +228,7 @@ var display = {
 }
 
 function saveGame() {
+	
 	var gameSave = {
 		score: game.score,
 		totalScore: game.totalScore,
@@ -214,6 +242,12 @@ function saveGame() {
 		achievementAwarded: achievement.awarded
 	};
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
+	
+		var audio1 = document.getElementById('audio1');
+		audio1.volume = 0.05;
+		audio1.currentTime = 0;
+		audio1.play();
+			
 }
 
 function loadGame(){
@@ -255,11 +289,21 @@ function loadGame(){
 }
 
 function resetGame(){
-    if(confirm("Are you sure you want to reset you game!?")){
-        var gameSave = {};
+	Swal.fire({
+	  title: 'Are you sure?',
+	  text: "You won't be able to revert this!",
+	  icon: 'warning',
+	  showCancelButton: true,
+	  confirmButtonColor: '#d4f1f9',
+	  cancelButtonColor: '#d33',
+	  confirmButtonText: 'Yes, delete it!'
+	}).then((result) => {
+	  if (result.isConfirmed) {
+		var gameSave = {};
         localStorage.setItem("gameSave", JSON.stringify(gameSave));
         location.reload();
-    }
+	  }
+	})
 }
 
 function fadeOut(element, duration, finalOpacity, callback){

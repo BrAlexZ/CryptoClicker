@@ -5,39 +5,45 @@
 		<title>Crypto Clicker</title>
 		<link rel="stylesheet" href="./css.css">
 		<script src="./js/main.js"></script>
-		<script type="text/javascript">
-        function togglePlay() {
-            var myAudio = document.getElementById("myAudio");myAudio.volume = 0.1;
-            return myAudio.paused ? myAudio.play() : myAudio.pause(); 
-        };</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E 
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> 
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		</head>
 	<body>
 		<div id="header">Crypto Clicker</div>
-			<div class="minuszero unselectable">
-				<div class="rules">
-					<h3>GOAL:</h3>The goal of the game is to get as many TOKENS as you can.<br>
-					You can get TOKENS by clicking on the Coin and purchasing assets like miners, earners etc. to produce them.<br>
-					The game has AutoSave. You can also save by clicking and reset your game anytime.
-				</div>
-				<div class="rules">
-					<h3>THE GAME:</h3> During the game you will get new upgrades like Double Click which you can buy. They will help you achieve your goal quicker.<br>
-						You will also recieve achievements which are only aesthetic badges which tells you your progress.
+			<div class="minuszero1 unselectable">
+				<div class="container">
+				<h1 id="Intro">Select your difficulty
+				<button id="info" type="button" onclick="info()"><img id="imginfo" src="img/button.png"/>
+				</button></h1> 
 				</div>
 				<div class="start">
 					<a href="index.html" class="button">
-						<button class="glow-on-hover">Play</button>
+						<button class="glow-on-hover">Easy</button>
+					</a>
+				</div>
+				<div class="start">
+					<a href="index.html" class="button">
+						<button class="glow-on-hover">Medium</button>
+					</a>
+				</div>
+				<div class="start">
+					<a href="index.html" class="button">
+						<button class="glow-on-hover">Hard</button>
 					</a>
 				</div>
 				<div class="sectionFooter">
-					<h2>Crypto Clicker</h2>
+					<h3>Unhappy with your results? Reset here!</h3>
 					<button onclick="resetGame();">Reset Game</button>
 				</div><br><br><br>
 				<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
 			</div>
-		<div id="footer">Alex Zovatto</div>	
+		<div id="footer">Alex Zovatto</div>
 		<audio id="myAudio" src="audio/Brasic.mp3"></audio>
+		<audio id="audio1" src="audio/Button.mp3"></audio>
 	</body><script src="./js/main.js"></script>
 </html>

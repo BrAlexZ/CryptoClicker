@@ -3,7 +3,6 @@
 }
 	
 html{
-	background: black;
 }
 
 body{
@@ -12,7 +11,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;	
 	backdrop-filter: blur(4px);
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Ultra', serif;
 	color: white;
 }
 
@@ -38,7 +37,9 @@ body{
 	bottom: 0px;
 	border-top: 2px solid orange;
 	position: absolute;
-	font-family: Gothic;
+	font-family: 'Ultra', serif;
+	position: fixed;
+    bottom: 0;
 }
 
 span{
@@ -147,7 +148,15 @@ input.music{
 
 div.minuszero{
 	width: 980px;
-	height: 875px;
+	height: 800px;
+	display: inline-block;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+div.minuszero1{
+	width: 980px;
+	height: 700px;
 	display: inline-block;
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -215,7 +224,6 @@ div.unselectable{ /*Block Selections */
 
 #shopContainer{
 	width: 100%;
-	background: url(img/panelHorizontal.png) bottom no-repeat, url(img/panelHorizontal.png) top no-repeat, url(img/panelGradientLeft.png) center left repeat;
 }
 
 table.shopButton{
@@ -248,7 +256,7 @@ table.shopButton #NameAndCost p:first-of-type{
 table.shopButton #amount{
 	font-size: 48px;
 	color: #595959;
-	font-family: roboto;
+	font-family: 'Ultra', serif;
 	width: 15%;
 }
 
@@ -388,5 +396,23 @@ div.rules{
     100% { background-position: 0 0; }
 }
 
+/*.container {
+  display: flex;
+  flex-direction: row 
+}*/
 
+#Intro{
+	font-size: 32px;
+}
 
+#info{
+	background:none;
+	border:none;
+	outline:none; 
+}
+
+#imginfo{
+	border: none;
+	width: 35px;
+	height: 35px;	
+}

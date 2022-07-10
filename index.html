@@ -4,23 +4,13 @@
 		<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.png" />
 		<title>Crypto Clicker</title>
 		<link rel="stylesheet" href="./css.css">
-		<script type="text/javascript">
-        function togglePlay() {
-            var myAudio = document.getElementById("myAudio");myAudio.volume = 0.1;
-            return myAudio.paused ? myAudio.play() : myAudio.pause(); 
-        };
-		
-		function play() {
-			var audio = document.getElementById('audio');
-			audio.volume = 0.03;
-			audio.currentTime = 0;
-			audio.play();
-			
-		};
-		</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E 
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> 
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		</head>
 	<body>
 		<div id="header">Crypto Clicker</div>
@@ -41,15 +31,15 @@
 					</div>
 				</div>
 				<div id="achievementContainer"></div><br><br>
-				<div class="sectionFooter">
-					<h5>Crypto Clicker</h5>
+					<br><br>
 					<button onclick="saveGame();">Save Game</button>
 					<button onclick="resetGame();">Reset Game</button>
-				</div><br><br><br>
+					<br><br><br>
 				<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
 			</div>
 		<div id="footer">Alex Zovatto</div>	
 		<audio id="myAudio" src="audio/Brasic.mp3"></audio>
 		<audio id="audio" src="audio/coin.mp3"></audio>
+		<audio id="audio1" src="audio/Button.mp3"></audio>
 	</body><script src="./js/main.js"></script>
 </html>
