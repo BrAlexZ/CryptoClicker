@@ -26,6 +26,7 @@ body{
 	color: white;
 	background-color: rgb(69, 62, 45);
 	border-bottom: 2px solid orange;
+	-webkit-text-stroke: 0.1px black;
 }
 
 #footer{
@@ -59,6 +60,8 @@ div{
 
 button:hover{
 	transform: scale(1.10);
+	border: 3px solid orange;
+	border-radius: 10px;
 }
 
 button:active{
@@ -145,8 +148,8 @@ input.music{
 }
 
 div.minuszero{
-	width: 980px;
-	height: 800px;
+	width: 1080px;
+	height: 100%;
 	display: inline-block;
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -157,23 +160,9 @@ div.zero{
 	height: 575px;
 }
 
-div.one{
+div.three{
 	float: left;
-	width: 66.2%;
-	height: 500px;
-	display: inline-block;
-	box-shadow: 2px 4px black;
-	border: 3px solid orange;
-	border-radius: 20px;
-	border-color: orange;	
-	background: url(img/bg2.jpg);
-	/*opacity: 0.79;*/
-	background-size: cover;
-	margin-right: 10px;
-}
-
-div.two{
-	width: 30%;	
+	width: 23%;	
 	display: inline-block;
 	box-shadow: 2px 4px black;
 	border: 3px solid orange;
@@ -182,6 +171,42 @@ div.two{
 	background: url(img/bg2.jpg);
 	opacity: 0.79;
 	background-size: cover;
+	margin-right: 10px;
+}
+
+#Wiki{
+	border-bottom: 3px solid orange;
+	color:white;
+	-webkit-text-stroke: 0.1px black;
+}
+
+div.one{
+	float: left;
+	width: 50.2%;
+	height: 500px;
+	display: inline-block;
+	box-shadow: 2px 4px black;
+	border: 3px solid orange;
+	border-radius: 20px;
+	border-color: orange;	
+	background: url(img/bg3.png);
+	opacity: 0.79;
+	background-size: cover;
+	margin-right: 10px;
+	-webkit-text-stroke: 0.1px black;
+}
+
+div.two{
+	width: 23%;	
+	display: inline-block;
+	box-shadow: 2px 4px black;
+	border: 3px solid orange;
+	border-radius: 20px;
+	border-color: orange;	
+	background: url(img/bg2.jpg);
+	opacity: 0.79;
+	background-size: cover;
+	-webkit-text-stroke: 0.1px black;
 }
 
 div.scoreContainer{
@@ -201,7 +226,9 @@ div.unselectable{ /*Block Selections */
 }
 
 #upgradeContainer{
+	margin-top: 10px;
 	display: inline-block;
+	border-bottom: 3px solid orange;
 }
 
 #scoreContainer{
@@ -227,6 +254,7 @@ table.shopButton{
 table.shopButton:hover{
 	background-color: #c7c7c7;
 	transition: all .2s ease-in-out;
+	border: 2px solid orange;
 }
 
 table.shopButton img{
@@ -261,6 +289,8 @@ div.sectionFooter{
 	opacity: 0.79;
 	background-size: cover;
 	width: 230px;
+	-webkit-text-stroke: 0.1px black;
+	height: 152px;
 }
 
 button{
@@ -278,7 +308,9 @@ button{
 	
 }
 
-#upgradeContainer:hover{
+#upgradeContainer img:hover{	
+	border: 3px solid orange;
+	transform: scale(1.10);
 }
 
 #achievementContainer img{
@@ -293,6 +325,11 @@ button{
 	background-size: cover;
 }
 
+#achievementContainer img:hover{	
+	border: 3px solid white;
+	transform: scale(1.10);
+}
+
 div.start{
 	margin: auto;
 	width: 230px;
@@ -302,6 +339,7 @@ div.start{
 	background: url(img/bg2.jpg);
 	background-size: cover;
 	margin-top: 50px;
+	border-radius: 10px;
 }
 
 div.rules{
@@ -386,6 +424,7 @@ div.rules{
 
 #Intro{
 	font-size: 32px;
+	-webkit-text-stroke: 0.1px black;
 }
 
 #info{
@@ -398,4 +437,60 @@ div.rules{
 	border: none;
 	width: 35px;
 	height: 35px;	
+}
+
+#upgrades{
+	width: 90%;
+    height: 40px;
+	background-color: black;
+	color: white;
+	border: 3px solid orange;
+	font-family: 'Ultra', serif;
+}
+
+#upgrades:hover{
+	border: 3px solid white;
+	transform: scale(1.10);
+}
+
+#achievements{
+	width: 90%;
+    height: 40px;
+	background-color: black;
+	color: white;
+	border: 3px solid orange;
+	font-family: 'Ultra', serif;
+}
+
+#achievements:hover{
+	border: 3px solid white;
+	transform: scale(1.10);
+}
+
+#assets{
+	width: 90%;
+    height: 40px;
+	background-color: black;
+	color: white;
+	border: 3px solid orange;
+	font-family: 'Ultra', serif;
+}
+
+#assets:hover{
+	border: 3px solid white;
+	transform: scale(1.10);
+}
+
+#tokens{
+	width: 90%;
+    height: 40px;
+	background-color: black;
+	color: white;
+	border: 3px solid orange;
+	font-family: 'Ultra', serif;
+}
+
+#tokens:hover{
+	border: 3px solid white;
+	transform: scale(1.10);
 }

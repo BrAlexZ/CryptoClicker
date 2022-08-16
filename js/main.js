@@ -5,7 +5,7 @@ function togglePlay() {
 
 function play() {
 	var audio = document.getElementById('audio');
-	audio.volume = 0.03;
+	audio.volume = 0.01;
 	audio.currentTime = 0;
 	audio.play();
 	
@@ -14,7 +14,59 @@ function play() {
 function info() {
 			Swal.fire({
 			title: "Difficulty Info", 
-			html: "The difference between each level of difficulty is the price of each upgrade and asset. On each difficulty level the assets will produce less coin and the upgrades will be less valuable.",  
+			html: "The difference between each level of difficulty is the price of each upgrade and asset. On each difficulty level the assets will produce less coins and the upgrades will be less valuable.",  
+			confirmButtonText: "Understood!",
+			confirmButtonColor: "#d4f1f9" ,			
+		});
+
+	var audio1 = document.getElementById('audio1');
+		audio1.volume = 0.05;
+		audio1.play();
+};
+
+function Tokens() {
+			Swal.fire({
+			title: "Tokens", 
+			html: "Tokens are the currency of the game, with Tokens you can buy assets, upgrades and collect achievements! Tokens can be earned by clicking the coin or automatically by assets.",  
+			confirmButtonText: "Understood!",
+			confirmButtonColor: "#d4f1f9" ,			
+		});
+
+	var audio1 = document.getElementById('audio1');
+		audio1.volume = 0.05;
+		audio1.play();
+};
+
+function Assets() {
+			Swal.fire({
+			title: "Assets", 
+			html: "The assets are the fastest way to make Tokens! With the previously collected Tokens you can buy assets like Miners, Earners etc. which continuously generate Tokens each asset has its own cost and produce its own amount of Tokens.",  
+			confirmButtonText: "Understood!",
+			confirmButtonColor: "#d4f1f9" ,			
+		});
+
+	var audio1 = document.getElementById('audio1');
+		audio1.volume = 0.05;
+		audio1.play();
+};
+
+function Upgrades() {
+			Swal.fire({
+			title: "Upgrades", 
+			html: "Upgrades will come progressively in the game automatically, they are used for boosting already owned assets or by increasing the amount of Tokens you get each click. ",  
+			confirmButtonText: "Understood!",
+			confirmButtonColor: "#d4f1f9" ,			
+		});
+
+	var audio1 = document.getElementById('audio1');
+		audio1.volume = 0.05;
+		audio1.play();
+};
+
+function Achievements() {
+			Swal.fire({
+			title: "Achievements", 
+			html: "The goal of the game is to collect as many achievements as you can. Achievements will automatically appear at the bottom of the screen when a certain requisition is completed. You will get achievements by buying assets, clicking or upgrading.",  
 			confirmButtonText: "Understood!",
 			confirmButtonColor: "#d4f1f9" ,			
 		});
@@ -151,38 +203,78 @@ var upgrade = {
 
 var achievement = {
 	name: [
+		"Good Miner (Achievement)",
 		"Pro Miner (Achievement)",
+		"Pro Earner (Achievement)",
+		"Pro Investor (Achievement)",
+		"Super Trader (Achievement)",
+		"Fingertastic (Achievement)",
+		"Fingredible (Achievement)",
 		"A Humble Start (Achievement)",
-		"Fingertastic (Achievement)"
+		"Good progress (Achievement)"
+		
 	],
 	description: [
 		"Buy 3 miners",
+		"Buy 10 miners",
+		"Buy 8 earners",
+		"Buy 5 investors",
+		"Buy 3 traders",
+		"Click the Token 1 time",
+		"Click the Token 1000 time",
 		"Gain 250 Token",
-		"Click the Token 1 time"
+		"Gain 2500 Token"
+		
 	],
 	image: [
 		"stone2_pickaxe.png",
+		"achi_22.png",
+		"pro.webp",
+		"123.jpg",
+		"321.png",
 		"earner_achievement.gif",
+		"fing.webp",
 		"first_click.gif",
+		"achievement_2.gif"
+		
 	],
 	type: [
 		"building",
+		"building",
+		"building",
+		"building",
+		"building",
+		"click",
+		"click",
 		"score",
-		"click"
+		"score"
+		
 	],
 	requirement: [
 		3,
+		10,
+		8,
+		5,
+		3,
+		1,
+		1000,
 		250,
-		1
-
+		2500
+		
 	],
 	objectIndex:[
 		0,
+		0,
+		1,
+		2,
+		3,
+		-1,
+		-1,
 		-1,
 		-1
 	],
 	
-	awarded: [false, false, false],
+	awarded: [false, false, false, false, false, false, false, false, false],
 	
 	earn: function(index) {
 		this.awarded[index] = true;
