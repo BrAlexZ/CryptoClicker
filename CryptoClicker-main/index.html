@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.png" />
+		<title>Crypto Clicker</title>
+		<link rel="stylesheet" href="./css.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E 
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+		</head>
+	<body>
+		<div id="header">Crypto Clicker</div>
+			<div class="minuszero unselectable">
+				<div class="zero unselectable">
+					<div class="three">
+						<div id="Wiki"><h2>Crypto Wiki</h1></div><br><br>
+						<div><button id="tokens" onclick="Tokens()">Tokens</button></div><br><br>
+						<div><button id="assets" onclick="Assets()">Assets</button></div><br><br>
+						<div><button id="upgrades" onclick="Upgrades()">Upgrades</button></div><br><br>
+						<div><button id="achievements" onclick="Achievements()">Achievements</button></div><br><br>	
+					</div>
+					<div class="one">
+						<div class="scoreContainer unselectable" >
+							<span id="score">0</span> Token
+						</div><br><br>
+						<div class="unselectable" id="clicker" onclick="play()" ></div><br><br>
+						<div class="scoreContainer unselectable" >
+							<span id="ScorePerSecond">0</span> Tokens per seconds					 
+						</div>
+					</div>
+					<div class="two">
+						<div id="upgradeContainer" class="upgradeContainer"></div>
+						<div id="shopContainer"></div>
+					</div>
+				</div>
+				<div id="achievementContainer"></div><br><br>
+					<br><br>
+					<button onclick="saveGame();">Save Game</button>
+					<button onclick="resetGame();">Reset Game</button>
+					<br><br><br>
+				<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
+			</div>
+		<div id="footer">Alex Zovatto</div>	
+		<audio id="myAudio" src="audio/Brasic.mp3"></audio>
+		<audio id="audio" src="audio/coin.mp3"></audio>
+		<audio id="audio1" src="audio/Button.mp3"></audio>
+	</body><script src="./js/main.js"></script>
+</html>
