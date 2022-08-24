@@ -80,7 +80,7 @@ var game = {
 	score: 0,
 	totalScore: 0,
 	totalClicks: 0,
-	clickValue: 1,
+	clickValue: 0.5,
 	version: 0.000,
 	
 	addToScore: function(amount){
@@ -114,15 +114,15 @@ var building = {
 	count: [0, 0, 0, 0],
 	income: [
 		1,
-		3,
-		7,
-		20
+		2,
+		5,
+		12
 	],
 	cost: [
-		20,
-		150,
-		2000,
-		10000
+		25,
+		200,
+		2500,
+		15000
 	],
 	
 	purchase: function(index) {
@@ -159,9 +159,9 @@ var upgrade = {
 		"click"
 	],
 	cost:[
-		600,
-		2500,
-		100
+		1200,
+		5000,
+		200
 	],
 	buildingIndex: [
 		0,
@@ -320,7 +320,7 @@ var display = {
 
 function saveGame() {
 	
-	var gameSave = {
+	var gameSave3 = {
 		score: game.score,
 		totalScore: game.totalScore,
 		totalClicks: game.totalClicks,
@@ -332,7 +332,7 @@ function saveGame() {
 		upgradePurchased: upgrade.purchased,
 		achievementAwarded: achievement.awarded
 	};
-	localStorage.setItem("gameSave", JSON.stringify(gameSave));
+	localStorage.setItem("gameSave3", JSON.stringify(gameSave3));
 	
 		var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
@@ -342,8 +342,8 @@ function saveGame() {
 }
 
 function loadGame(){
-    var savedGame = JSON.parse(localStorage.getItem("gameSave"));
-	if (localStorage.getItem("gameSave") !== null){
+    var savedGame = JSON.parse(localStorage.getItem("gameSave3"));
+	if (localStorage.getItem("gameSave3") !== null){
 		if(typeof savedGame.score !== "undefined") game.score = savedGame.score;
 		if(typeof savedGame.totalScore !== "undefined") game.totalScore = savedGame.totalScore;
 		if(typeof savedGame.totalClicks !== "undefined") game.totalClicks = savedGame.totalClicks;
@@ -387,17 +387,11 @@ function resetGame(){
 	  showCancelButton: true,
 	  confirmButtonColor: '#d4f1f9',
 	  cancelButtonColor: '#d33',
-	  confirmButtonText: 'Yes, reset them!'
+	  confirmButtonText: 'Yes, reset it!'
 	}).then((result) => {
 	  if (result.isConfirmed) {
-		var gameSave = {};
-        localStorage.setItem("gameSave", JSON.stringify(gameSave));
-        location.reload();
-		var gameSave2 = {};
-        localStorage.setItem("gameSave2", JSON.stringify(gameSave));
-        location.reload();
 		var gameSave3 = {};
-        localStorage.setItem("gameSave3", JSON.stringify(gameSave));
+        localStorage.setItem("gameSave3", JSON.stringify(gameSave3));
         location.reload();
 	  }
 	})
@@ -478,13 +472,13 @@ setInterval(function() {
 }, 2000);
 
 setInterval (function(){
-    saveGame();
+    saveGame3();
 }, 30000); //30000ms = 30s
 
 document.addEventListener("keydown", function(event){ // block ctrl + s and save game
     if(event.ctrlKey && event.which == 83) {
         event.preventDefault();
-        saveGame();
+        saveGame3();
     }
 }, false);
 
