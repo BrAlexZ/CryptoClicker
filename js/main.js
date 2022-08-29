@@ -16,8 +16,11 @@ function info() {
 			title: "Difficulty Info", 
 			html: "The difference between each level of difficulty is the price of each upgrade and asset. On each difficulty level the assets will produce less coins and the upgrades will be less valuable.",  
 			confirmButtonText: "Understood!",
-			confirmButtonColor: "#d4f1f9" ,			
+			confirmButtonColor: "#249D9F" ,		
+		}).then((result) => {
+			setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 		});
+			document.getElementById('footer').style.display = "none";
 
 	var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
@@ -29,8 +32,11 @@ function Tokens() {
 			title: "Tokens", 
 			html: "Tokens are the currency of the game, with Tokens you can buy assets, upgrades and collect achievements! Tokens can be earned by clicking the coin or automatically by assets.",  
 			confirmButtonText: "Understood!",
-			confirmButtonColor: "#d4f1f9" ,			
+			confirmButtonColor: "#249D9F" ,			
+		}).then((result) => {
+			setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 		});
+			document.getElementById('footer').style.display = "none";
 
 	var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
@@ -42,8 +48,11 @@ function Assets() {
 			title: "Assets", 
 			html: "The assets are the fastest way to make Tokens! With the previously collected Tokens you can buy assets like Miners, Earners etc. which continuously generate Tokens each asset has its own cost and produce its own amount of Tokens.",  
 			confirmButtonText: "Understood!",
-			confirmButtonColor: "#d4f1f9" ,			
+			confirmButtonColor: "#249D9F" ,			
+		}).then((result) => {
+			setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 		});
+			document.getElementById('footer').style.display = "none";
 
 	var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
@@ -55,8 +64,11 @@ function Upgrades() {
 			title: "Upgrades", 
 			html: "Upgrades will come progressively in the game automatically, they are used for boosting already owned assets or by increasing the amount of Tokens you get each click. ",  
 			confirmButtonText: "Understood!",
-			confirmButtonColor: "#d4f1f9" ,			
+			confirmButtonColor: "#249D9F" ,			
+		}).then((result) => {
+			setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 		});
+			document.getElementById('footer').style.display = "none";
 
 	var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
@@ -68,8 +80,11 @@ function Achievements() {
 			title: "Achievements", 
 			html: "The goal of the game is to collect as many achievements as you can. Achievements will automatically appear at the bottom of the screen when a certain requisition is completed. You will get achievements by buying assets, clicking or upgrading.",  
 			confirmButtonText: "Understood!",
-			confirmButtonColor: "#d4f1f9" ,			
+			confirmButtonColor: "#249D9F" ,			
+		}).then((result) => {
+			setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 		});
+			document.getElementById('footer').style.display = "none";
 
 	var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
@@ -385,10 +400,11 @@ function resetGame(){
 	  text: "You won't be able to revert this!",
 	  icon: 'warning',
 	  showCancelButton: true,
-	  confirmButtonColor: '#d4f1f9',
+	  confirmButtonColor: "#249D9F",
 	  cancelButtonColor: '#d33',
 	  confirmButtonText: 'Yes, reset them!'
 	}).then((result) => {
+		setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 	  if (result.isConfirmed) {
 		var gameSave = {};
         localStorage.setItem("gameSave", JSON.stringify(gameSave));
@@ -401,6 +417,7 @@ function resetGame(){
         location.reload();
 	  }
 	})
+	document.getElementById('footer').style.display = "none";
 }
 
 function fadeOut(element, duration, finalOpacity, callback){

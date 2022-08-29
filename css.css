@@ -4,7 +4,7 @@
 	
 html,body{
 	width: 100%;
-	height: 100;
+	height: 100%;
 }
 
 body{
@@ -15,6 +15,12 @@ body{
 	backdrop-filter: blur(4px);
 	font-family: 'Ultra', serif;
 	color: white;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#content{
 	height: 100%;
 	width: 100%;
 }
@@ -42,9 +48,8 @@ body{
 	border-top: 2px solid orange;
 	position: relative;
 	font-family: 'Ultra', serif;
-	top: 100%;
-	transform: translateY(-100%);
-	top: 30px;
+	margin: 0;
+	top: -32px;
 }
 
 span{
@@ -154,7 +159,6 @@ input.music{
 
 div.minuszero{
 	width: 1080px;
-	height: 100%;
 	display: inline-block;
 	margin-top: 40px;
 	margin-bottom: 25px;
@@ -188,7 +192,7 @@ div.three{
 div.one{
 	float: left;
 	width: 50.2%;
-	height: 500px;
+	height: 500px;%
 	display: inline-block;
 	box-shadow: 2px 4px black;
 	border: 3px solid orange;

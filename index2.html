@@ -16,37 +16,39 @@
 		<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
 		</head>
 	<body>
-		<div id="header">Crypto Clicker - (Easy)</div>
-			<div class="minuszero unselectable">
-				<div class="zero unselectable">
-					<div class="three">
-						<div id="Wiki"><h2>Crypto Wiki</h1></div><br><br>
-						<div><button id="wikis" onclick="Tokens()">Tokens</button></div><br><br>
-						<div><button id="wikis" onclick="Assets()">Assets</button></div><br><br>
-						<div><button id="wikis" onclick="Upgrades()">Upgrades</button></div><br><br>
-						<div><button id="wikis" onclick="Achievements()">Achievements</button></div><br><br>	
-					</div>
-					<div class="one">
-						<div class="scoreContainer unselectable" >
-							<span id="score">0</span> Token
-						</div><br><br>
-						<div class="unselectable" id="clicker" onclick="play()" ></div><br><br>
-						<div class="scoreContainer unselectable" >
-							<span id="ScorePerSecond">0</span> Tokens per seconds					 
+		<div id="content">
+			<div id="header">Crypto Clicker - (Easy)</div>
+				<div class="minuszero unselectable">
+					<div class="zero unselectable">
+						<div class="three">
+							<div id="Wiki"><h2>Crypto Wiki</h1></div><br><br>
+							<div><button id="wikis" onclick="Tokens()">Tokens</button></div><br><br>
+							<div><button id="wikis" onclick="Assets()">Assets</button></div><br><br>
+							<div><button id="wikis" onclick="Upgrades()">Upgrades</button></div><br><br>
+							<div><button id="wikis" onclick="Achievements()">Achievements</button></div><br><br>	
+						</div>
+						<div class="one">
+							<div class="scoreContainer unselectable" >
+								<span id="score">0</span> Token
+							</div><br><br>
+							<div class="unselectable" id="clicker" onclick="play()" ></div><br><br>
+							<div class="scoreContainer unselectable" >
+								<span id="ScorePerSecond">0</span> Tokens per seconds					 
+							</div>
+						</div>
+						<div class="two">
+							<div id="upgradeContainer" class="upgradeContainer"></div>
+							<div id="shopContainer"></div>
 						</div>
 					</div>
-					<div class="two">
-						<div id="upgradeContainer" class="upgradeContainer"></div>
-						<div id="shopContainer"></div>
-					</div>
+					<div id="achievementContainer"></div><br><br>
+					<br>
+					<button id="save" onclick="saveGame();">Save Game</button>
+					<button id="reset" onclick="resetGame();">Reset Game</button>
+					<br><br>
+					<button id="imgmusic"><img id="imginfo" src="img/imgmusic.png"/></button><br>
+					<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
 				</div>
-				<div id="achievementContainer"></div><br><br>
-				<br>
-				<button id="save" onclick="saveGame();">Save Game</button>
-				<button id="reset" onclick="resetGame();">Reset Game</button>
-				<br><br>
-				<button id="imgmusic"><img id="imginfo" src="img/imgmusic.png"/></button><br>
-				<input type="checkbox" id="music" class="toggle-button" value="sound" onclick="togglePlay()">
 			</div>
 		<div id="footer">Alex Zovatto</div>	
 		<audio id="myAudio" src="audio/Brasic.mp3"></audio>
