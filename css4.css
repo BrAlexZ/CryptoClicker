@@ -34,18 +34,18 @@ body{
 	text-align: center;
 	line-height: 50px;
 	color: white;
-	background-color: #7D4047;
-	border-bottom: 2px solid red;
+	background-color: rgb(69, 62, 45);
+	border-bottom: 2px solid orange;
 	-webkit-text-stroke: 0.1px black;
 }
 
 #footer{
 	text-align: center;
 	height: 30px;
-	background-color: #7D4047;
+	background-color: rgb(69, 62, 45);
 	line-height: 30px;
 	color: white;
-	border-top: 2px solid red;
+	border-top: 2px solid orange;
 	position: relative;
 	font-family: 'Ultra', serif;
 	margin: 0;
@@ -53,7 +53,7 @@ body{
 }
 
 span{
-	color: red;
+	color: orange;
 }
 	
 div{	
@@ -70,7 +70,7 @@ div{
 
 button:hover{
 	transform: scale(1.10);
-	border: 3px solid red;
+	border: 3px solid orange;
 	border-radius: 10px;
 }
 
@@ -108,7 +108,7 @@ a.button {
 	z-index: 99;
 	font-size: 30px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	color: red;
+	color: orange;
 	position: absolute;
 }
 
@@ -130,7 +130,7 @@ input.music{
 	display: inline-block;
 	width: 35px;
 	height: 17.5px;
-	background: red;
+	background: orange;
 	border-radius: 30px;
 	cursor: pointer;
 	transition: 1s;
@@ -150,7 +150,7 @@ input.music{
 
 .toggle-button:checked::after {
 	transform: translateX(calc(100% + 3px));
-	background-color: red;
+	background-color: orange;
 }
 
 .toggle-button:checked {
@@ -174,9 +174,9 @@ div.three{
 	width: 23%;	
 	display: inline-block;
 	box-shadow: 2px 4px black;
-	border: 3px solid red;
+	border: 3px solid orange;
 	border-radius: 20px;
-	border-color: red;	
+	border-color: orange;	
 	background: url(img/bg2.jpg);
 	opacity: 0.79;
 	background-size: cover;
@@ -184,7 +184,7 @@ div.three{
 }
 
 #Wiki{
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid orange;
 	color:white;
 	-webkit-text-stroke: 0.1px black;
 }
@@ -192,12 +192,12 @@ div.three{
 div.one{
 	float: left;
 	width: 50.2%;
-	height: 500px;
+	height: 500px;%
 	display: inline-block;
 	box-shadow: 2px 4px black;
-	border: 3px solid red;
+	border: 3px solid orange;
 	border-radius: 20px;
-	border-color: red;	
+	border-color: orange;	
 	background: url(img/bg3.png);
 	opacity: 0.79;
 	background-size: cover;
@@ -209,9 +209,9 @@ div.two{
 	width: 23%;	
 	display: inline-block;
 	box-shadow: 2px 4px black;
-	border: 3px solid red;
+	border: 3px solid orange;
 	border-radius: 20px;
-	border-color: red;	
+	border-color: orange;	
 	background: url(img/bg2.jpg);
 	opacity: 0.79;
 	background-size: cover;
@@ -237,7 +237,7 @@ div.unselectable{ /*Block Selections */
 #upgradeContainer{
 	margin-top: 10px;
 	display: inline-block;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid orange;
 }
 
 #scoreContainer{
@@ -264,7 +264,7 @@ table.shopButton{
 table.shopButton:hover{
 	background-color: #c7c7c7;
 	transition: all .2s ease-in-out;
-	border: 3px solid red;
+	border: 3px solid orange;
 }
 
 table.shopButton img{
@@ -292,9 +292,9 @@ div.sectionFooter{
 	margin-top: 5%;
 	display: inline-block;
 	box-shadow: 2px 4px black;
-	border: 3px solid red;
+	border: 3px solid orange;
 	border-radius: 10px;
-	border-color: red;	
+	border-color: orange;	
 	background: url(img/bg2.jpg);
 	opacity: 0.79;
 	background-size: cover;
@@ -320,7 +320,7 @@ button{
 }
 
 #upgradeContainer img:hover{	
-	border: 3px solid red;
+	border: 3px solid orange;
 	transform: scale(1.10);
 }
 
@@ -330,9 +330,9 @@ button{
 	background-color: #b5b5b5;
 	transition: all .2s ease-in-out;
 	box-shadow: 2px 4px black;
-	border: 3px solid red;
+	border: 3px solid orange;
 	border-radius: 20px;
-	border-color: red;	
+	border-color: orange;	
 	background-size: cover;
 }
 
@@ -345,8 +345,8 @@ div.start{
 	margin: auto;
 	width: 230px;
 	height: 40px;
-	border: 3px solid red;
-	border-color: red;	
+	border: 3px solid orange;
+	border-color: orange;	
 	background: url(img/bg2.jpg);
 	background-size: cover;
 	margin-top: 50px;
@@ -358,9 +358,9 @@ div.rules{
 	margin: auto;
 	width: 300px;
 	height: 225px;
-	border: 3px solid red;
+	border: 3px solid orange;
 	border-radius: 20px;
-	border-color: red;	
+	border-color: orange;	
 	background: url(img/bg2.jpg);
 	background-size: cover;
 	text-align: left;
@@ -461,7 +461,7 @@ div.rules{
 #wikis{
 	width: 90%;
     height: 40px;
-    border: 3px solid red;
+    border: 3px solid orange;
     outline: none;
     color: #fff;
     background: #111;
@@ -515,7 +515,7 @@ div.rules{
 #save{
 	background-color: black;
 	color: white;
-	border: 3px solid red;
+	border: 3px solid orange;
 	font-family: 'Ultra', serif;
 }
 
@@ -530,7 +530,7 @@ div.rules{
 #reset{
 	background-color: black;
 	color: white;
-	border: 3px solid red;
+	border: 3px solid orange;
 	font-family: 'Ultra', serif;
 }
 
@@ -539,7 +539,7 @@ div.rules{
     height: 40px;
 	background-color: black;
 	color: white;
-	border: 3px solid red;
+	border: 3px solid orange;
 	font-family: 'Ultra', serif;
 }
 
@@ -553,23 +553,11 @@ div.rules{
     height: 40px;
 	background-color: black;
 	color: white;
-	border: 3px solid red;
+	border: 3px solid orange;
 	font-family: 'Ultra', serif;
 }
 
 #tokens:hover{
 	border: 3px solid white;
 	transform: scale(1.10);
-}
-
-@media screen and (max-height: 960px) and (min-height: 910px) {
-	  *{
-		zoom: 0.99; 
-	  }
-}
-
-@media screen and (max-height: 910px) and (min-height: 500px) {
-	  *{
-		zoom: 0.98; 
-	  }
 }

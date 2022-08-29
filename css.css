@@ -561,3 +561,15 @@ div.rules{
 	border: 3px solid white;
 	transform: scale(1.10);
 }
+
+@media screen and (max-height: 960px) and (min-height: 910px) {
+	  *{
+		zoom: 0.99; 
+	  }
+}
+
+@media screen and (max-height: 910px) and (min-height: 500px) {
+	  *{
+		zoom: 0.98; 
+	  }
+}
