@@ -562,14 +562,133 @@ div.rules{
 	transform: scale(1.10);
 }
 
-@media screen and (max-height: 960px) and (min-height: 910px) {
+@media screen and (max-height: 975px) and (min-height: 925px) {
 	  *{
 		zoom: 0.99; 
 	  }
 }
 
-@media screen and (max-height: 910px) and (min-height: 500px) {
+@media screen and (max-height: 925px) and (min-height: 865px) {
 	  *{
 		zoom: 0.98; 
+	  }
+}
+@media screen and (max-height: 865px) and (min-height: 822px) {
+	  *{
+		zoom: 0.97; 
+	  }
+}
+@media screen and (max-height: 822px) and (min-height: 784px) {
+	  *{
+		zoom: 0.96; 
+	  }
+}
+
+@media screen and (max-height: 784px) and (min-height: 742px) {
+	  *{
+		zoom: 0.95; 
+	  }
+}
+
+@media screen and (max-height: 742px) and (min-height: 708px) {
+	  *{
+		zoom: 0.94; 
+	  }
+}
+
+@media screen and (max-height: 708px) and (min-height: 672px) {
+	  *{
+		zoom: 0.93; 
+	  }
+}
+
+@media screen and (max-height: 672px) and (min-height: 636px) {
+	  *{
+		zoom: 0.92; 
+	  }
+}
+
+@media screen and (max-height: 636px) and (min-height: 607px) {
+	  *{
+		zoom: 0.91; 
+	  }
+}
+
+@media screen and (max-height: 607px) and (min-height: 575px) {
+	  *{
+		zoom: 0.90; 
+	  }
+}
+
+@media screen and (max-height: 575px) and (min-height: 544px) {
+	  *{
+		zoom: 0.89; 
+	  }
+}
+
+@media screen and (max-height: 544px) and (min-height: 515px) {
+	  *{
+		zoom: 0.88; 
+	  }
+}
+
+@media screen and (max-height: 515px) and (min-height: 488px) {
+	  *{
+		zoom: 0.87; 
+	  }
+}
+
+@media screen and (max-height: 488px) and (min-height: 464px) {
+	  *{
+		zoom: 0.86; 
+	  }
+}
+
+@media screen and (max-height: 464px) and (min-height: 0px) {
+	  *{
+		zoom: 0.85; 
+	  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 1030px) {
+	  
+	  div.minuszero{
+			width: 100%;
+			display: inline-block;
+			margin-top: 40px;
+			margin-bottom: 25px;
+		}
+}
+
+@media screen and (max-width: 1030px) and (min-width: 0px) {
+	  
+	  div.minuszero{
+			width: 100%;
+			display: inline-block;
+			margin-top: 40px;
+			margin-bottom: 25px;
+		}
+		
+		div.three{
+			display: none;
+		}
+		
+		div.one{
+			width:57%;
+		}
+		div.two{
+			width:33%;
+		}
+}
+
+@media screen and (max-width: 810px) and (min-width: 488px) {
+	 #header{
+		  font-size: 30px;
+	  }
+}
+
+@media screen and (max-width: 488px) and (min-width: 0px) {
+	 #header{
+		  font-size: 20px;
 	  }
 }

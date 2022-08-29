@@ -402,18 +402,12 @@ function resetGame(){
 	  showCancelButton: true,
 	  confirmButtonColor: "#249D9F",
 	  cancelButtonColor: '#d33',
-	  confirmButtonText: 'Yes, reset them!'
+	  confirmButtonText: 'Yes reset it!'
 	}).then((result) => {
 		setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 	  if (result.isConfirmed) {
-		var gameSave = {};
-        localStorage.setItem("gameSave", JSON.stringify(gameSave));
-        location.reload();
-		var gameSave2 = {};
-        localStorage.setItem("gameSave2", JSON.stringify(gameSave));
-        location.reload();
 		var gameSave3 = {};
-        localStorage.setItem("gameSave3", JSON.stringify(gameSave));
+        localStorage.setItem("gameSave3", JSON.stringify(gameSave3));
         location.reload();
 	  }
 	})

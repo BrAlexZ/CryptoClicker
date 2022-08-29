@@ -158,7 +158,6 @@ input.music{
 }
 
 div.minuszero{
-	width: 1080px;
 	display: inline-block;
 	margin-top: 40px;
 	margin-bottom: 25px;
@@ -347,7 +346,7 @@ div.start{
 	height: 40px;
 	border: 3px solid orange;
 	border-color: orange;	
-	background: url(img/bg2.jpg);
+	background-color: black;
 	background-size: cover;
 	margin-top: 50px;
 	border-radius: 10px;
@@ -380,6 +379,7 @@ div.rules{
     z-index: 0;
     border-radius: 10px;
 	font-family: 'Ultra', serif;
+	
 }
 
 .glow-on-hover:before {
@@ -560,4 +560,135 @@ div.rules{
 #tokens:hover{
 	border: 3px solid white;
 	transform: scale(1.10);
+}
+
+@media screen and (max-height: 856px) and (min-height: 0px) {
+	  div.start{
+		border: none;
+	}
+}
+
+@media screen and (max-height: 856px) and (min-height: 808px) {
+	  *{
+		zoom: 0.99; 
+	  }
+	    div.start{
+			width: 220px;
+			height: 30px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 808px) and (min-height: 767px) {
+	  *{
+		zoom: 0.98; 
+	  }
+		div.start{
+			width: 220px;
+			height: 30px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 767px) and (min-height: 728px) {
+	  *{
+		zoom: 0.97; 
+	  }
+		div.start{
+			width: 220px;
+			height: 30px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 728px) and (min-height: 693px) {
+	  *{
+		zoom: 0.96; 
+	  }
+		div.start{
+			width: 220px;
+			height: 30px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 693px) and (min-height: 656px) {
+	  *{
+		zoom: 0.95; 
+	  }
+	    div.start{
+			width: 200px;
+			height: 25px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 656px) and (min-height: 592px) {
+	  *{
+		zoom: 0.93; 
+	  }
+		div.start{
+			width: 200px;
+			height: 25px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 592px) and (min-height: 535px) {
+	  *{
+		zoom: 0.91; 
+	  }
+		div.start{
+			width: 180px;
+			height: 25px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 535px) and (min-height: 478px) {
+	  *{
+		zoom: 0.89; 
+	  }
+		div.start{
+			width: 180px;
+			height: 25px;
+			border: none;
+		}
+}
+
+@media screen and (max-height: 478px) and (min-height: 0px) {
+	  *{
+		zoom: 0.88; 
+	  }
+		div.start{
+			width: 180px;
+			height: 25px;
+			border: none;
+		}
+}
+
+@media screen and (max-width: 1080px) and (min-width: 1030px) {
+	  
+	  div.minuszero{
+			width: 100%;
+			display: inline-block;
+			margin-top: 40px;
+			margin-bottom: 25px;
+		}
+}
+
+@media screen and (max-width: 1030px) and (min-width: 0px) {
+
+}
+
+@media screen and (max-width: 510px) and (min-width: 288px) {
+	 #header{
+		  font-size: 30px;
+	  }
+}
+
+@media screen and (max-width: 288px) and (min-width: 0px) {
+	 #header{
+		  font-size: 20px;
+	  }
 }

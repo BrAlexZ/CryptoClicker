@@ -95,7 +95,7 @@ var game = {
 	score: 0,
 	totalScore: 0,
 	totalClicks: 0,
-	clickValue: 2,
+	clickValue: 1,
 	version: 0.000,
 	
 	addToScore: function(amount){
@@ -128,16 +128,16 @@ var building = {
 	],
 	count: [0, 0, 0, 0],
 	income: [
-		2,
-		5,
-		10,
-		30
+		1,
+		3,
+		7,
+		20
 	],
 	cost: [
-		15,
-		110,
-		1200,
-		6000
+		20,
+		150,
+		2000,
+		10000
 	],
 	
 	purchase: function(index) {
@@ -174,9 +174,9 @@ var upgrade = {
 		"click"
 	],
 	cost:[
-		400,
-		2000,
-		80
+		600,
+		2500,
+		100
 	],
 	buildingIndex: [
 		0,
@@ -335,7 +335,7 @@ var display = {
 
 function saveGame() {
 	
-	var gameSave2 = {
+	var gameSave = {
 		score: game.score,
 		totalScore: game.totalScore,
 		totalClicks: game.totalClicks,
@@ -347,7 +347,7 @@ function saveGame() {
 		upgradePurchased: upgrade.purchased,
 		achievementAwarded: achievement.awarded
 	};
-	localStorage.setItem("gameSave2", JSON.stringify(gameSave2));
+	localStorage.setItem("gameSave", JSON.stringify(gameSave));
 	
 		var audio1 = document.getElementById('audio1');
 		audio1.volume = 0.05;
@@ -357,8 +357,8 @@ function saveGame() {
 }
 
 function loadGame(){
-    var savedGame = JSON.parse(localStorage.getItem("gameSave2"));
-	if (localStorage.getItem("gameSave2") !== null){
+    var savedGame = JSON.parse(localStorage.getItem("gameSave"));
+	if (localStorage.getItem("gameSave") !== null){
 		if(typeof savedGame.score !== "undefined") game.score = savedGame.score;
 		if(typeof savedGame.totalScore !== "undefined") game.totalScore = savedGame.totalScore;
 		if(typeof savedGame.totalClicks !== "undefined") game.totalClicks = savedGame.totalClicks;
@@ -406,8 +406,8 @@ function resetGame(){
 	}).then((result) => {
 		setTimeout(() => { document.getElementById('footer').style.display = "block"; }, 500);
 	  if (result.isConfirmed) {
-		var gameSave2 = {};
-        localStorage.setItem("gameSave2", JSON.stringify(gameSave2));
+		var gameSave = {};
+        localStorage.setItem("gameSave", JSON.stringify(gameSave));
         location.reload();
 	  }
 	})
@@ -508,6 +508,4 @@ window.onload = function() {
 }
 	
 					
-					
-	
-	
+				
